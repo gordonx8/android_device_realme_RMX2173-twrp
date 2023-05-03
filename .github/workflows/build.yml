@@ -26,6 +26,12 @@ jobs:
 
        - name: Recovery Compilation
          uses: sundaqiang/Recovery-Compiler@production
+         
+       - name: Upload a Build Artifact
+         uses: actions/upload-artifact@main
+         with:
+            name: Twrp1
+            path: "${BuildPath}/out/target/product/${CODENAME}"
 
        - name: Create Release
          id: create_release
