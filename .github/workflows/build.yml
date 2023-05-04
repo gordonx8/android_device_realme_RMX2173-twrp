@@ -31,7 +31,7 @@ jobs:
          uses: actions/upload-artifact@main
          with:
             name: Twrp1
-            path: "${BuildPath}/out/target/product/${CODENAME}"
+            path: "out/target/product/"
 
        - name: Create Release
          id: create_release
