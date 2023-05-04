@@ -31,7 +31,7 @@ jobs:
          uses: actions/upload-artifact@main
          with:
             name: Twrp1
-            path: "out/target/product/"
+            path: "out/target/product/*/recovery.img"
 
        - name: Create Release
          id: create_release
